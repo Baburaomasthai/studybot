@@ -880,7 +880,7 @@ async def on_text(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await update.message.reply_text("NEET – Subjects:", reply_markup=subjects_kb("NEET"))
         return
     elif txt == "👥 Community":
-        await update.message.reply_text("📚 𝑺𝑷𝑬𝑪𝑰𝑭𝑰𝑪𝑨𝑳𝑳𝒀 𝑭𝑶𝑹 𝑱𝑬𝑬/𝑵𝑬𝑬𝑻 𝑻𝑶𝑷𝑷𝑬𝑹𝑺
+        await update.message.reply_text("""📚 𝑺𝑷𝑬𝑪𝑰𝑭𝑰𝑪𝑨𝑳𝑳𝒀 𝑭𝑶𝑹 𝑱𝑬𝑬/𝑵𝑬𝑬𝑻 𝑻𝑶𝑷𝑷𝑬𝑹𝑺
 
 ➤ 𝙈𝙖𝙞𝙣 𝘾𝙤𝙣𝙩𝙚𝙣𝙩 𝘾𝙝𝙖𝙣𝙣𝙚𝙡𝙨
 
@@ -909,17 +909,17 @@ https://telegra.ph/DMCA--Copyright-Notice-for-TeamStudyHUB-09-04
 
 ━━━━━━━━━━━━━━━━━
 
-𝑱𝑨𝑰 𝑺𝑯𝑹𝑬𝑬 𝑲𝑹𝑰𝑺𝑯𝑵𝑨 🚩")
+𝑱𝑨𝑰 𝑺𝑯𝑹𝑬𝑬 𝑲𝑹𝑰𝑺𝑯𝑵𝑨 🚩""")
         return
     elif txt == "ℹ️ Credits":
-        await update.message.reply_text("📚 𝑨 𝑯𝑼𝑮𝑬 𝑻𝑯𝑨𝑵𝑲𝑺 𝑻𝑶 𝑪𝑶𝑵𝑻𝑹𝑰𝑩𝑼𝑻𝑶𝑹𝑺
+        await update.message.reply_text("""📚 𝑨 𝑯𝑼𝑮𝑬 𝑻𝑯𝑨𝑵𝑲𝑺 𝑻𝑶 𝑪𝑶𝑵𝑻𝑹𝑰𝑩𝑼𝑻𝑶𝑹𝑺
 
 Gratitude to all amazing channels from where books are shared here 🙌.
 If you want proper credits or any content removal, feel free to DM me.
 Much respect to everyone who’s contributing towards students’ growth ❤️
 
 — @TeamStudyHUB 📚
-Owner :- @TG_Jaggi")
+Owner :- @TG_Jaggi""")
         return
 
     for exam in exams_from_data():
