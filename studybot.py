@@ -1,3 +1,20 @@
+from flask import Flask
+import threading
+import os
+
+app = Flask(__name__)
+
+@app.route('/')
+def home():
+    return "✅ 𝑇𝑟𝑦𝑖𝑛𝑔 𝑇𝑜 𝑇𝑎𝑐𝑘𝑙𝑒 𝑆𝑒𝑡𝑏𝑎𝑐𝑘 𝑇𝐺 - https://t.me/MrJaggiX!"
+
+def run_flask():
+    port = int(os.environ.get("PORT", 5000))  
+    app.run(host="0.0.0.0", port=port)
+
+# Flask ko background thread me start karo
+threading.Thread(target=run_flask).start()
+
 import json
 import os
 from typing import Dict, Any, List
@@ -12,8 +29,8 @@ from telegram.ext import (
 
 # =================== CONFIG ===================
 
-TOKEN = "7714600486:AAEdqqXvADjwb5rzr907NLHEi2i4jVKHq9s"
-OWNER_ID = 6651946441
+TOKEN = os.getenv("BOT_TOKEN")
+OWNER_ID = int(os.getenv("ADMIN_ID"))
 DATA_FILE = "materials.json"
 
 # =================== DATA MODEL ===================
