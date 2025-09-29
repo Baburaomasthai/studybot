@@ -985,7 +985,6 @@ def main():
         main()
 
 if __name__ == "__main__":
-    main()
 
     # Flask ko background thread mein
     web_thread = threading.Thread(target=run_web)
